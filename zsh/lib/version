@@ -1,2 +1,2 @@
 #!/bin/zsh
-echo $ZSH_VERSION
+echo "$ZSH_VERSION"
