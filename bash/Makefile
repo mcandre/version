@@ -1,3 +1,8 @@
+all: test
+
+test: lib/version
+	./lib/version
+
 shlint:
 	-shlint lib/
 
