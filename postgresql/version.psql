@@ -1,0 +1,3 @@
+--() { :; }; exec psql -f "$0"
+
+SELECT version();
