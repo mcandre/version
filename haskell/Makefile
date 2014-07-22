@@ -1,18 +1,22 @@
-all: test
+BIN=version
 
-BIN=Version
+FLAGS=-O2 -Wall -fwarn-tabs --make -fforce-recomp -o $(BIN) -main-is Version
+
+all: test
 
 test: $(BIN)
 	./$(BIN)
 
 $(BIN): Version.hs
-	ghc -O2 -Wall -fwarn-tabs --make Version.hs -o $(BIN)
+	ghc $(FLAGS) Version.hs
 
-lint:
+hlint:
 	hlint .
 
+lint: hlint
+
 clean:
-	-rm *.exe
 	-rm $(BIN)
+	-rm *.exe
 	-rm *.o
 	-rm *.hi
