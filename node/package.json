@@ -1,0 +1,26 @@
+{
+  "name": "version",
+  "description": "scripts that print the version of their compiler/interpreter",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mcandre/version.git"
+  },
+  "author": "Andrew Pennebaker <andrew.pennebaker@gmail.com> (http://www.yellosoft.us/)",
+  "directories": {
+    "lib": "."
+  },
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "test": "node version.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-cli": "~0.1.13",
+    "grunt-exec": "~0.4.6",
+    "jshint": ">=2.1.2"
+  }
+}
