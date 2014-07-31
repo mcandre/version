@@ -1,4 +1,4 @@
-FLAGS=-Wall -Wextra -Wmost -Weverything -framework Foundation -lobjc -o Version
+FLAGS=-Wall -Wextra -Wmost -Weverything -framework Foundation -lobjc
 
 LINUX_FLAGS=
 
@@ -19,7 +19,7 @@ test: $(BIN)
 	./$(BIN)
 
 $(BIN): Version.m
-	clang $(FLAGS) $(LINUX_FLAGS) Version.m
+	clang $(FLAGS) $(LINUX_FLAGS) -o $(BIN) Version.m
 
 lint: $(BIN)
 	oclint Version.m -- $(FLAGS)
