@@ -1,14 +1,15 @@
 CC=clang
 FLAGS=-O2 -Wall -Wextra -Wmost -Weverything
 
-BIN=version
+BIN=bin/version
 
 all: test
 
 test: $(BIN)
-	./$(BIN)
+	$(BIN)
 
 $(BIN): version.c
+	mkdir -p bin/
 	$(CC) $(FLAGS) -o $(BIN) version.c
 
 cppcheck:
@@ -26,5 +27,4 @@ valgrind: $(BIN)
 	valgrind --tool=memcheck --leak-check=yes --show-reachable=yes --track-fds=yes --dsymutil=yes ./$(BIN) a b c
 
 clean:
-	-rm *.exe
-	-rm $(BIN)
+	-rm bin/

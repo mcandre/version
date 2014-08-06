@@ -11,22 +11,22 @@ ifneq ($(OS),Windows_NT)
 	endif
 endif
 
-BIN=Version
+BIN=bin/version
 
 all: test
 
 test: $(BIN)
-	./$(BIN)
+	$(BIN)
 
 $(BIN): Version.m
+	mkdir -p bin/
 	clang $(FLAGS) $(LINUX_FLAGS) -o $(BIN) Version.m
 
 lint: $(BIN)
-	oclint Version.m -- $(FLAGS)
+	oclint Version.m -- $(FLAGS) $(LINUX_FLAGS) -o $(BIN)
 
 valgrind: $(BIN)
 	valgrind --tool=memcheck --leak-check=yes --show-reachable=yes --track-fds=yes --dsymutil=yes ./$(BIN)
 
 clean:
-	-rm *.exe
-	-rm $(BIN)
+	-rm rf bin/
