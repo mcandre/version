@@ -1,2 +1,9 @@
 #!/bin/zsh
-echo "$ZSH_VERSION"
+
+main() {
+	echo "$ZSH_VERSION"
+}
+
+if [[ $zsh_eval_context[-1] == toplevel ]]; then
+  main
+fi
