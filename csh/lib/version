@@ -1,2 +1,7 @@
 #!/bin/csh
-echo "$version" # tcsh
+
+if( -f /usr/bin/dpkg ) then
+  dpkg -L csh
+else
+  echo "$version"
+endif
