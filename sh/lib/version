@@ -1,0 +1,2 @@
+#!/bin/sh
+echo $(getconf _POSIX_VERSION)
