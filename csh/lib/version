@@ -1,7 +1,15 @@
 #!/bin/csh
 
-if( -f /usr/bin/dpkg ) then
-  dpkg -L csh
-else
+if($?tcsh) then
   echo "$version"
+else if( -f /usr/bin/dpkg ) then
+  dpkg -l csh
+else if( -f /usr/local/bin/brew ) then
+  brew list csh
+else if( -f /usr/bin/yum ) then
+  yum -l csh
+else if( -f /usr/bin/emerge ) then
+  emerge -Opv csh
+else if( -f /usr/bin/pacman ) then
+  pacman -Qi csh
 endif
