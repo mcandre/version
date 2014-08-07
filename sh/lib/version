@@ -1,2 +1,2 @@
-#!/bin/sh
+#!/usr/bin/env sh
 echo $(getconf _POSIX_VERSION)
