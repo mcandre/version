@@ -1,3 +1,7 @@
 #!/usr/bin/env swift
 
-println(SWIFT_VERSION)
+import AppKit
+
+let version = NSAppKitVersionNumber
+
+println("AppKit \(version)")
