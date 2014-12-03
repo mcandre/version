@@ -1,5 +1,3 @@
-import AppKit
+let version = SWIFT_VERSION
 
-let version = NSAppKitVersionNumber
-
-println("AppKit \(version)")
+println("\(version)")
