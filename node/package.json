@@ -7,14 +7,14 @@
     "url": "git://github.com/mcandre/version.git"
   },
   "author": "Andrew Pennebaker <andrew.pennebaker@gmail.com> (http://www.yellosoft.us/)",
-  "directories": {
-    "lib": "."
-  },
   "engines": {
     "node": ">=0.8"
   },
+  "bin": {
+    "version": "bin/version"
+  },
   "scripts": {
-    "test": "node version.js"
+    "test": "node bin/version"
   },
   "dependencies": {},
   "devDependencies": {

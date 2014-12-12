@@ -5,7 +5,9 @@ A Node.js script that prints the server's version of Node.js
 # EXAMPLE
 
 ```
-$ node version.js 
+$ npm pack
+$ npm install -g version-0.0.0.tgz
+$ version
 { http_parser: '1.0',
   node: '0.10.18',
   v8: '3.14.5.9',
