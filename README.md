@@ -4,6 +4,6 @@
 
 ```
 $ cd ruby/
-ruby$ ruby version.rb
+$ ruby version.rb
 2.0.0
 ```
