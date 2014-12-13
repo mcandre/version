@@ -27,4 +27,4 @@ valgrind: $(BIN)
 	valgrind --tool=memcheck --leak-check=yes --show-reachable=yes --track-fds=yes --dsymutil=yes ./$(BIN) a b c
 
 clean:
-	-rm bin/
+	-rm -rf bin/
