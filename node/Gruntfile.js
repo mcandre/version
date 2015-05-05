@@ -2,7 +2,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
 		exec: {
 			test: "npm test",
-      jshint: "jshint ."
+      jshint: "node_modules/.bin/jshint ."
 		}
   });
 
