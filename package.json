@@ -1,0 +1,21 @@
+{
+  "name": "version",
+  "description": "a collection of programming scripts that print their own language version information",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mcandre/version.git"
+  },
+  "author": "Andrew Pennebaker <andrew.pennebaker@gmail.com> (http://www.yellosoft.us/)",
+  "directories": {
+    "lib": "."
+  },
+  "engines": {
+    "node": ">=0.8"
+  },
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {
+    "editorconfig-tools": ">= 0.0.1"
+  }
+}

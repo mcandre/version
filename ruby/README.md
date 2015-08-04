@@ -5,7 +5,7 @@ A Ruby program for printing the version of Ruby being used.
 # EXAMPLE
 
 ```
-$ ruby version.rb 
+$ ruby version.rb
 2.0.0
 ```
 
