@@ -6,13 +6,13 @@ A Java program that prints the version of the JRE running the program.
 
 ```
 $ mvn package
-$ mvn exec:java -Dexec.mainClass=us.yellosoft.version.Version
+$ bin/version
 1.7.0_40
 ```
 
 # REQUIREMENTS
 
-* [JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) 1.6+
+* [JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) 1.7+
 
 # CODE COVERAGE
 
