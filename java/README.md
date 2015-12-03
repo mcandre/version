@@ -14,3 +14,9 @@ $ bin/version
 
 * [JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 * [Gradle](http://gradle.org/) 2.1+
+
+## Optional
+
+* [Sonar](http://www.sonarqube.org/)
+
+E.g., `brew install gradle sonar sonar-runner`
