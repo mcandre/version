@@ -18,5 +18,6 @@ $ bin/version
 ## Optional
 
 * [Sonar](http://www.sonarqube.org/)
+* [Infer](http://fbinfer.com/)
 
-E.g., `brew install gradle sonar sonar-runner`
+E.g., `brew install gradle sonar sonar-runner infer`
