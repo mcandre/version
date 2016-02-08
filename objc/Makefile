@@ -21,8 +21,13 @@ $(BIN): Version.m
 	mkdir -p bin/
 	clang $(FLAGS) $(LINUX_FLAGS) -o $(BIN) Version.m
 
-lint: $(BIN)
+oclint: $(BIN)
 	oclint Version.m -- $(FLAGS) $(LINUX_FLAGS) -o $(BIN)
+
+infer: clean
+	infer -- make
+
+lint: oclint infer
 
 valgrind: $(BIN)
 	valgrind --tool=memcheck --leak-check=yes --show-reachable=yes --track-fds=yes --dsymutil=yes ./$(BIN)
