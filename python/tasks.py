@@ -16,6 +16,11 @@ def pyflakes():
     run('pyflakes .')
 
 
-@task(pre=[pep8, pylint, pyflakes])
+@task
+def bandit():
+    run('find . -name \'*.py\' | xargs bandit')
+
+
+@task(pre=[pep8, pylint, pyflakes, bandit])
 def lint():
     pass
