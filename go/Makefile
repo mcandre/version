@@ -1,4 +1,11 @@
-BIN=bin/version
+# Windows
+ifeq ($(OS),Windows_NT)
+	EXTENSION=.exe
+else
+	EXTENSION=
+endif
+
+BIN=bin/version$(EXTENSION)
 
 all: test
 
