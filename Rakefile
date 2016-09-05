@@ -74,6 +74,10 @@ task :infernu => [] do
   sh 'find . -type d -name node_modules -prune -o -type d -name bower_components -prune -o -type d -name target -prune -o -type f -name "*.js" -exec infernu {} \\;'
 end
 
+task :gofmt => [] do
+  sh 'gofmt -s -w .'
+end
+
 task :lint => [
   :ruby,
   :reek,
@@ -89,7 +93,8 @@ task :lint => [
   :editorconfig,
   :astyle,
   :xmllint,
-  :infernu
+  :infernu,
+  :gofmt
 ] do
 end
 
