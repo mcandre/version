@@ -18,3 +18,11 @@ $ go get github.com/mcandre/version/go/version/...
 ```
 $ go install
 ```
+
+# LINT
+
+Keep the code tidy:
+
+```
+$ make lint
+```
