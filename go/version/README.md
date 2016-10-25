@@ -12,3 +12,9 @@ $ go get github.com/mcandre/version/go/version/...
 ```
 
 (Yes, include the ellipsis as well, it's the magic Go syntax for downloading, building, and installing all components of a package, including any libraries and command line tools.)
+
+# COMPILE AND INSTALL LOCALLY
+
+```
+$ go install
+```
