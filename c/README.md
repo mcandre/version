@@ -1,3 +1,9 @@
+# DEPRECATED
+
+See https://github.com/mcandre/version/tree/master/go
+
+Robust C code requires vigilance, whereas Go automatically solves most of these issues on behalf of the programmer.
+
 # version/c
 
 A C program that prints the version of the compiler used to build it
