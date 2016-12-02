@@ -11,4 +11,4 @@ $ ruby version.rb
 
 # REQUIREMENTS
 
-* [Ruby](https://www.ruby-lang.org/) 1.9+
+* [Ruby](https://www.ruby-lang.org/)

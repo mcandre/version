@@ -11,6 +11,13 @@ bin/Version
 Swift version 1.1 (swift-600.0.56.1)
 ```
 
-# Requirements
+# REQUIREMENTS
 
-* [Xcode](https://developer.apple.com/xcode/) 6+
+* [coreutils](https://www.gnu.org/software/coreutils/coreutils.html)
+* [Swift](https://swift.org)
+* [make](https://www.gnu.org/software/make/)
+
+## Optional
+
+* [swiftlint](https://github.com/realm/SwiftLint)
+* [Infer](http://fbinfer.com)
