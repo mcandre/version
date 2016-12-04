@@ -1,13 +1,13 @@
 #!/usr/bin/env dash
 
 if [ -f /usr/bin/dpkg ]; then
-  dpkg -l dash
+    dpkg -l dash
 elif [ -f /usr/local/bin/brew ]; then
-  brew list dash
+    brew list dash
 elif [ -f /usr/bin/yum ]; then
-  yum -l dash
+    yum -l dash
 elif [ -f /usr/bin/emerge ]; then
-  emerge -Opv dash
+    emerge -Opv dash
 elif [ -f /usr/bin/pacman ]; then
-  pacman -Qi dash
+    pacman -Qi dash
 fi

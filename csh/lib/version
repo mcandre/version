@@ -1,15 +1,15 @@
 #!/usr/bin/env csh
 
 if($?tcsh) then
-  echo "$version"
+    echo "$version"
 else if( -f /usr/bin/dpkg ) then
-  dpkg -l csh
+    dpkg -l csh
 else if( -f /usr/local/bin/brew ) then
-  brew list csh
+    brew list csh
 else if( -f /usr/bin/yum ) then
-  yum -l csh
+    yum -l csh
 else if( -f /usr/bin/emerge ) then
-  emerge -Opv csh
+    emerge -Opv csh
 else if( -f /usr/bin/pacman ) then
-  pacman -Qi csh
+    pacman -Qi csh
 endif

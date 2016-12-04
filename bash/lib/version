@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 main() {
-  echo "$BASH_VERSION"
+    echo "$BASH_VERSION"
 }
 
 if [[ "$BASH_SOURCE" == "$0" ]]; then

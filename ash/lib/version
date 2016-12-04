@@ -1,13 +1,13 @@
 #!/usr/bin/env ash
 
 if [ -f /usr/bin/dpkg ]; then
-  dpkg -l ash
+    dpkg -l ash
 elif [ -f /usr/local/bin/brew ]; then
-  brew list ash
+    brew list ash
 elif [ -f /usr/bin/yum ]; then
-  yum -l ash
+    yum -l ash
 elif [ -f /usr/bin/emerge ]; then
-  emerge -Opv ash
+    emerge -Opv ash
 elif [ -f /usr/bin/pacman ]; then
-  pacman -Qi ash
+    pacman -Qi ash
 fi
