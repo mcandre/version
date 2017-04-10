@@ -1,3 +1,3 @@
 # REQUIREMENTS
 
-* [rust](http://www.rust-lang.org/)
+* [rust](http://www.rust-lang.org/) 1.16.0+
