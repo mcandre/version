@@ -3,10 +3,6 @@
 extern crate rustc_version;
 
 fn main() {
-  let version : rustc_version::Version = match rustc_version::version() {
-    Ok(v) => v,
-    Err(err) => panic!(err)
-  };
-
+  let version : rustc_version::Version = rustc_version::version().expect("Could not identify rustc version");
   println!("Rust version {}.{}.{} ", version.major, version.minor, version.patch);
 }
