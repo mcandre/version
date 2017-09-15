@@ -34,7 +34,7 @@ $ go get github.com/mcandre/version/go/version/...
 
 ```
 $ mkdir -p $GOPATH/src/github.com/mcandre
-$ git clone git@github.com:mcandre/version.git $GOPATH/src/github.com/mcandre/version
+$ git clone https://github.com/mcandre/version.git $GOPATH/src/github.com/mcandre/version
 $ sh -c "cd $GOPATH/src/github.com/mcandre/version/go/version && go install"
 ```
 
