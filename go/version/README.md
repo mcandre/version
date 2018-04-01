@@ -9,15 +9,14 @@ go1.7
 
 https://godoc.org/github.com/mcandre/version/go/version
 
-# REQUIREMENTS
+# RUNTIME REQUIREMENTS
 
-* [Go](https://golang.org) 1.7+ with [$GOPATH configured](https://gist.github.com/mcandre/ef73fb77a825bd153b7836ddbd9a6ddc)
+(None)
 
-## Optional
+# BUILDTIME REQUIREMENTS
 
-* [Git](https://git-scm.com)
-* [Make](https://www.gnu.org/software/make/)
-* [Bash](https://www.gnu.org/software/bash/)
+* [Go](https://golang.org/) 1.9+
+* [Mage](https://magefile.org/) (e.g., `go get github.com/magefile/mage`)
 * [goimports](https://godoc.org/golang.org/x/tools/cmd/goimports) (e.g. `go get golang.org/x/tools/cmd/goimports`)
 * [golint](https://github.com/golang/lint) (e.g. `go get github.com/golang/lint/golint`)
 * [errcheck](https://github.com/kisielk/errcheck) (e.g. `go get github.com/kisielk/errcheck`)
@@ -36,7 +35,9 @@ $ go get github.com/mcandre/version/go/version/...
 ```
 $ mkdir -p $GOPATH/src/github.com/mcandre
 $ git clone https://github.com/mcandre/version.git $GOPATH/src/github.com/mcandre/version
-$ sh -c "cd $GOPATH/src/github.com/mcandre/version/go/version && go install"
+$ cd "$GOPATH/src/github.com/mcandre/version/go/version"
+$ git submodule update --init --recursive
+$ go install
 ```
 
 # LINT
@@ -44,5 +45,5 @@ $ sh -c "cd $GOPATH/src/github.com/mcandre/version/go/version && go install"
 Keep the code tidy:
 
 ```
-$ make lint
+$ mage lint
 ```
