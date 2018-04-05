@@ -12,7 +12,7 @@ cabal-version:  >=1.8
 
 source-repository head
   type:     git
-  location: git://github.com/mcandre/genetics.git
+  location: git://github.com/mcandre/version.git
 
 executable version
   build-depends:
