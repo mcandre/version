@@ -9,6 +9,7 @@
 ## Recommended
 
 * [shake](https://shakebuild.com/) (e.g., `cabal install shake`)
+* [hlint](https://hackage.haskell.org/package/hlint) (e.g., `cabal install happy; cabal install hlint`)
 
 # BUILD
 
