@@ -1,0 +1,23 @@
+name:           version
+version:        0.0.1
+category:       Tutorials
+synopsis:       show haskell version
+description:    A Haskell program that queries its own compiler version
+license:        BSD3
+license-file:   LICENSE.md
+author:         Andrew Pennebaker
+maintainer:     andrew.pennebaker@gmail.com
+build-type:     Simple
+cabal-version:  >=1.8
+
+source-repository head
+  type:     git
+  location: git://github.com/mcandre/genetics.git
+
+executable version
+  build-depends:
+    base >= 4.3.1.0 && < 5
+
+  main-is: Version.hs
+  ghc-options: -O2 -Wall -fwarn-tabs
+  hs-source-dirs: src

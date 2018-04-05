@@ -1,9 +1,29 @@
-# REQUIREMENTS
+# RUNTIME REQUIREMENTS
 
-* [coreutils](https://www.gnu.org/software/coreutils/coreutils.html)
-* [Haskell](https://www.haskell.org)
-* [make](https://www.gnu.org/software/make/)
+(None)
 
-## OPTIONAL
+# BUILDTIME REQUIREMENTS
 
-* [hlint](http://hackage.haskell.org/package/hlint)
+* [Haskell](http://www.haskell.org/)
+
+## Recommended
+
+* [shake](https://shakebuild.com/) (e.g., `cabal install shake`)
+
+# BUILD
+
+```console
+$ shake
+```
+
+# LINT
+
+```console
+$ shake lint
+```
+
+# TEST
+
+```console
+$ shake test
+```

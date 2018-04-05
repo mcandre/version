@@ -1,6 +1,4 @@
-#!/usr/bin/env runhaskell
-
-module Version where
+module Main where
 
 import System.Info (compilerVersion)
 
