@@ -14,6 +14,7 @@
 # BUILD
 
 ```console
+$ cabal install --only-dependencies --enable-tests
 $ shake
 ```
 
