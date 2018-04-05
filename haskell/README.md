@@ -14,6 +14,7 @@
 # BUILD
 
 ```console
+$ cabal install --only-dependencies --enable-documentation
 $ cabal install --only-dependencies --enable-tests
 $ shake
 ```
@@ -28,4 +29,10 @@ $ shake lint
 
 ```console
 $ shake test
+```
+
+# PUBLISH
+
+```console
+$ shake publish
 ```
