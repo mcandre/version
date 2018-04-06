@@ -27,7 +27,6 @@ main = do
       cmd_ "cabal" "install"
 
     phony "uninstall" $ do
-      cmd_ "ghc-pkg" "unregister" "--force" "version"
       removeFilesAfter homeDir ["/.cabal/bin/version" <.> exe]
 
     phony "build" $
