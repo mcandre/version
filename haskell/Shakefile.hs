@@ -26,7 +26,7 @@ main = do
     phony "install" $
       cmd_ "cabal" "install"
 
-    phony "uninstall" $ do
+    phony "uninstall" $
       removeFilesAfter homeDir ["/.cabal/bin/version" <.> exe]
 
     phony "build" $
