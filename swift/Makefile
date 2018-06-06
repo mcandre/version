@@ -1,17 +1,25 @@
-SWIFT_VERSION=$(shell swiftc -v 2>&1 | head -n 1)
+.PHONY: test clean-artifacts clean-infer
+
+.build/release/version: Package.swift Source/version/main.swift
+	swift build -c release
 
 all: test
 
-test: bin/Version
-	bin/Version
+test: .build/release/version
+	.build/release/version
 
-bin/Version: Version-sed.swift
-	mkdir -p bin/
-	swiftc -o bin/Version Version-sed.swift
+clean-artifacts:
+	-rm -rf .build
 
-Version-sed.swift: Version.swift
-	sed 's/SWIFT_VERSION/"$(SWIFT_VERSION)"/' Version.swift > Version-sed.swift
+clean-infer:
+	-rm -rf infer-out
 
-clean:
-	-rm -rf bin/
-	-rm *-sed.swift
+clean: clean-artifacts clean-infer
+
+swiftlint:
+	swiftlint
+
+infer: clean
+	infer -- make
+
+lint: swiftlint infer

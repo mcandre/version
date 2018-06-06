@@ -4,20 +4,16 @@
 
 ```
 $ make
-sed 's/SWIFT_VERSION/"Swift version 1.1 (swift-600.0.56.1)"/' Version.swift > Version-sed.swift
-mkdir -p bin/
-swiftc -o bin/Version Version-sed.swift
-bin/Version
-Swift version 1.1 (swift-600.0.56.1)
+$ .build/release/version
+4+
 ```
 
-# REQUIREMENTS
+# BUILDTIME REQUIREMENTS
 
+* [Swift](https://swift.org/) 4+
+* [mint](https://github.com/yonaskolb/mint)
+* [SwiftLint](https://github.com/realm/SwiftLint) (e.g., `mint install realm/SwiftLint`)
+* [Infer](http://fbinfer.com/)
+* [Python](https://www.python.org/) 2
 * [coreutils](https://www.gnu.org/software/coreutils/coreutils.html)
-* [Swift](https://swift.org)
 * [make](https://www.gnu.org/software/make/)
-
-## Optional
-
-* [swiftlint](https://github.com/realm/SwiftLint)
-* [Infer](http://fbinfer.com)
