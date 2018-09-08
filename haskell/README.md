@@ -4,18 +4,15 @@
 
 # BUILDTIME REQUIREMENTS
 
-* [Haskell](http://www.haskell.org/)
-
-## Recommended
-
-* [shake](https://shakebuild.com/) (e.g., `cabal install shake`)
-* [hlint](https://hackage.haskell.org/package/hlint) (e.g., `cabal install happy; cabal install hlint`)
+* [GHC Haskell](http://www.haskell.org/) 8+
+* [happy](https://hackage.haskell.org/package/happy) (e.g., `cabal install happy`)
 
 # BUILD
 
 ```console
-$ cabal install --only-dependencies --enable-documentation
-$ cabal install --only-dependencies --enable-tests
+$ cabal update
+$ cabal install --force-reinstalls --only-dependencies --enable-documentation
+$ cabal install --force-reinstalls --only-dependencies --enable-tests
 $ shake
 ```
 
