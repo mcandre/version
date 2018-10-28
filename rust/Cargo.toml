@@ -6,3 +6,17 @@ authors = ["Andrew Pennebaker <andrew.pennebaker@gmail.com>"]
 
 [dependencies]
 rustc_version = "0.2.1"
+tinyrick = { version = "0.0.6", optional = true }
+tinyrick_extras = { version = "0.0.1", optional = true }
+
+[features]
+letmeout = ["tinyrick", "tinyrick_extras"]
+
+[[bin]]
+name = "version"
+path = "src/bin/version.rs"
+
+[[bin]]
+name = "rick"
+path = "rick.rs"
+required-features = ["letmeout"]
