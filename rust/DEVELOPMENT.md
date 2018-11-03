@@ -5,36 +5,28 @@ version's own compilation process is compatible with standard cargo. We wrap som
 # BUILDTIME REQUIREMENTS
 
 * [Rust](https://www.rust-lang.org/en-US/) 1.30+
-* [clippy](https://github.com/rust-lang-nursery/rust-clippy)
 
-# INSTALL ARTIFACTS FROM LOCAL SOURCE
+## Recommended
+
+* [clippy](https://github.com/rust-lang-nursery/rust-clippy)
+* [tinyrick](https://github.com/mcandre/tinyrick) (e.g., `cargo install tinyrick`)
+
+# INSTALL BINARIES FROM LOCAL SOURCE
 
 ```console
 $ tinyrick install
 ```
 
-# UNINSTALL ARTIFACTS
+# UNINSTALL BINARIES
 
 ```console
 $ tinyrick uninstall
 ```
 
-# LINT
+# BUILD: DOC, LINT, TEST, COMPILE
 
 ```console
-$ tinyrick lint
-```
-
-# TEST
-
-```console
-$ tinyrick test
-```
-
-# GENERATE DOCUMENTATION
-
-```console
-$ tinyrick doc
+$ tinyrick [build]
 ```
 
 # PUBLISH
