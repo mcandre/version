@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 sub main {
-  print "$]\n";
+    print "$]\n";
 }
 
 main unless caller;

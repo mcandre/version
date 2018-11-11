@@ -5,9 +5,9 @@ import std.string;
 import std.compiler;
 
 void main(const string[] args) {
-  string v = format("%d", __VERSION__);
-  string c = name;
+    string v = format("%d", __VERSION__);
+    string c = name;
 
-  writeln("Version: ", v);
-  writeln("Compiler: ", c);
+    writeln("Version: ", v);
+    writeln("Compiler: ", c);
 }

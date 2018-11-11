@@ -3,9 +3,9 @@ using std::cout;
 using std::endl;
 
 int main() {
-  const char *version = __VERSION__;
+    const char *version = __VERSION__;
 
-  cout << version << endl;
+    cout << version << endl;
 
-  return 0;
+    return 0;
 }

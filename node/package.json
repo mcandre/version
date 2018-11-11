@@ -1,27 +1,27 @@
 {
-  "name": "version",
-  "description": "scripts that print the version of their compiler/interpreter",
-  "version": "0.0.0",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/mcandre/version.git"
-  },
-  "author": "Andrew Pennebaker <andrew.pennebaker@gmail.com> (http://www.yellosoft.us/)",
-  "engines": {
-    "node": ">=0.11.6"
-  },
-  "bin": {
-    "version": "bin/version"
-  },
-  "scripts": {
-    "test": "node bin/version"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "grunt": "~0.4.5",
-    "grunt-cli": "~0.1.13",
-    "grunt-exec": "~0.4.6",
-    "jshint": ">=2.1.2",
-    "eslint": ">=0.16.0"
-  }
+    "name": "version",
+    "description": "scripts that print the version of their compiler/interpreter",
+    "version": "0.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mcandre/version.git"
+    },
+    "author": "Andrew Pennebaker <andrew.pennebaker@gmail.com>",
+    "engines": {
+        "node": ">=0.11.6"
+    },
+    "bin": {
+        "version": "bin/version"
+    },
+    "scripts": {
+        "test": "node bin/version"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "grunt": "~0.4.5",
+        "grunt-cli": "~0.1.13",
+        "grunt-exec": "~0.4.6",
+        "jshint": ">=2.1.2",
+        "eslint": ">=0.16.0"
+    }
 }

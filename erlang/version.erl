@@ -11,5 +11,5 @@
 -export([start/0]).
 
 start() ->
-  io:format("~s~n", [erlang:system_info(otp_release)]),
-  init:stop().
+    io:format("~s~n", [erlang:system_info(otp_release)]),
+    init:stop().

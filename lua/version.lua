@@ -2,12 +2,11 @@
 
 local main
 main = function()
-  print(_VERSION)
+    print(_VERSION)
 end
 
 if type(package.loaded[(...)]) ~= "userdata" then
-  main(arg)
+    main(arg)
 else
-  module(..., package.seeall)
+    module(..., package.seeall)
 end
-

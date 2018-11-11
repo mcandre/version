@@ -1,11 +1,11 @@
 #import <Foundation/Foundation.h>
 
 int main() {
-  NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 
-  NSLog(@"%s\n", __VERSION__);
+    NSLog(@"%s\n", __VERSION__);
 
-  [pool drain];
+    [pool drain];
 
-  return 0;
+    return 0;
 }
