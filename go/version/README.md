@@ -1,6 +1,6 @@
 # EXAMPLE
 
-```
+```console
 $ version
 go1.7
 ```
@@ -15,7 +15,7 @@ https://godoc.org/github.com/mcandre/version/go/version
 
 # BUILDTIME REQUIREMENTS
 
-* [Go](https://golang.org/) 1.9+
+* [Go](https://golang.org/) 1.11+
 
 ## Recommended
 
@@ -24,10 +24,11 @@ https://godoc.org/github.com/mcandre/version/go/version
 * [golint](https://github.com/golang/lint) (e.g. `go get github.com/golang/lint/golint`)
 * [errcheck](https://github.com/kisielk/errcheck) (e.g. `go get github.com/kisielk/errcheck`)
 * [nakedret](https://github.com/alexkohler/nakedret) (e.g. `go get github.com/alexkohler/nakedret`)
+* [shadow](golang.org/x/tools/go/analysis/passes/shadow/cmd/shadow) (e.g. `go get -u golang.org/x/tools/go/analysis/passes/shadow/cmd/shadow`)
 
 # INSTALL FROM REMOTE GIT REPOSITORY
 
-```
+```console
 $ go get github.com/mcandre/version/go/version/...
 ```
 
@@ -35,7 +36,7 @@ $ go get github.com/mcandre/version/go/version/...
 
 # INSTALL FROM LOCAL GIT REPOSITORY
 
-```
+```console
 $ mkdir -p $GOPATH/src/github.com/mcandre
 $ git clone https://github.com/mcandre/version.git $GOPATH/src/github.com/mcandre/version
 $ cd "$GOPATH/src/github.com/mcandre/version/go/version"
@@ -47,6 +48,6 @@ $ go install
 
 Keep the code tidy:
 
-```
+```console
 $ mage lint
 ```
