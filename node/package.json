@@ -18,10 +18,13 @@
     },
     "dependencies": {},
     "devDependencies": {
+        "esformatter-braces": "~1.2.1",
+        "esformatter-quotes": "~1.1.0",
+        "eslint": ">=0.16.0",
         "grunt": "~0.4.5",
         "grunt-cli": "~0.1.13",
         "grunt-exec": "~0.4.6",
-        "jshint": ">=2.1.2",
-        "eslint": ">=0.16.0"
+        "jsfmt": "0.5.3",
+        "jshint": ">=2.1.2"
     }
 }
