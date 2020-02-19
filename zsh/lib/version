@@ -1,9 +1,0 @@
-#!/usr/bin/env zsh
-
-main() {
-    echo "$ZSH_VERSION"
-}
-
-if [[ $zsh_eval_context[-1] == toplevel ]]; then
-    main
-fi

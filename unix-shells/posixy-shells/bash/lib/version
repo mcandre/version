@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -eEuo pipefail
+
+main() {
+    echo "$BASH_VERSION"
+}
+
+if [[ "${BASH_SOURCE[0]}" == "$0" ]]; then
+    main
+fi

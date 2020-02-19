@@ -1,0 +1,12 @@
+#!/usr/bin/env zsh
+# shellcheck shell=bash
+set -euo pipefail
+
+main() {
+    echo "$ZSH_VERSION"
+}
+
+# shellcheck disable=SC2154
+if [[ "${zsh_eval_context[-1]}" == 'toplevel' ]]; then
+    main
+fi

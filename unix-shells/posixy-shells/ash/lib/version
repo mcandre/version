@@ -1,0 +1,14 @@
+#!/usr/bin/env ash
+# shellcheck shell=ash
+
+if [ -f /usr/bin/dpkg ]; then
+    dpkg -l ash
+elif [ -f /usr/bin/yum ]; then
+    yum -l ash
+elif [ -f /usr/bin/emerge ]; then
+    emerge -Opv ash
+elif [ -f /usr/bin/pacman ]; then
+    pacman -Qi ash
+else
+    command -V ash
+fi
