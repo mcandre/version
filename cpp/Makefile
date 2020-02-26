@@ -9,20 +9,20 @@ test: $(BIN)
 	$(BIN)
 
 $(BIN): version.cpp
-	mkdir -p bin/
+	mkdir -p bin
 	$(CC) $(FLAGS) -o $(BIN) version.cpp
 
 cppcheck:
 	cppcheck --quiet --enable=all --suppressions-list=$$HOME/suppressions.cfg .
 
 cpplint:
-	find . -type f -name '*.cpp' -o -name '*.[ch]' -exec cpplint --filter=-readability/streams,-build/header_guard,-whitespace/parens,-readability/braces,-whitespace/newline,-legal/copyright {} \;
+	find . -type f -iname '*.cpp' -o -iname '*.cc' -o -iname '*.cxx' -o -iname '*.c' -o -iname '*.hh' -o -iname '*.hxx' -o -iname '*.h' -exec cpplint --filter=-readability/streams,-build/header_guard,-whitespace/parens,-readability/braces,-whitespace/newline,-legal/copyright {} \;
 
 splint:
-	find . -type f -name '*.c' -exec splint {} \;
+	find . -type f -iname '*.c' -exec splint {} \;
 
 vera++:
-	find . -type f -name '*.cpp' -o -name '*.[ch]' -exec vera++ -s {} \;
+	find . -type f -iname '*.cpp' -o -iname '*.cc' -o -iname '*.cxx' -o -iname '*.c' -o -iname '*.hh' -o -iname '*.hxx' -o -iname '*.h' -exec vera++ -s {} \;
 
 lint: cppcheck cpplint splint vera++
 

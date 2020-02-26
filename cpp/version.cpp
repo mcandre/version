@@ -1,11 +1,6 @@
 #include <iostream>
-using std::cout;
-using std::endl;
 
 int main() {
-    const char *version = __VERSION__;
-
-    cout << version << endl;
-
+    std::cout << __VERSION__ << std::endl;
     return 0;
 }
