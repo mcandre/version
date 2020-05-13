@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 unset IFS
-set -eEuo pipefail
+set -eufEo pipefail
 
 main() {
     echo "$BASH_VERSION"

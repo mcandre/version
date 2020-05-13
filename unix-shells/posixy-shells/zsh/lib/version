@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 # shellcheck shell=bash
 unset IFS
-set -eEuo pipefail
+set -eufEo pipefail
 
 main() {
     echo "$ZSH_VERSION"
