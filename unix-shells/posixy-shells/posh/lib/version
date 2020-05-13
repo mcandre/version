@@ -1,0 +1,16 @@
+#!/usr/bin/env posh
+# shellcheck shell=sh
+unset IFS
+set -euf
+
+if [ -f /usr/bin/dpkg ]; then
+    dpkg -l posh
+elif [ -f /usr/local/bin/brew ]; then
+    brew list posh
+elif [ -f /usr/bin/yum ]; then
+    yum -l posh
+elif [ -f /usr/bin/emerge ]; then
+    emerge -Opv posh
+elif [ -f /usr/bin/pacman ]; then
+    pacman -Qi posh
+fi
