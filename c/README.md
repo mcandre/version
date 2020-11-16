@@ -15,4 +15,4 @@ $ version
 
 # CONTRIBUTING
 
-For more details on developing tinyrick itself, see [DEVELOPMENT.md](DEVELOPMENT.md).
+For more details on developing version itself, see [DEVELOPMENT.md](DEVELOPMENT.md).
