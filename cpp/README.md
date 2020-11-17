@@ -1,13 +1,18 @@
-# REQUIREMENTS
+# version/cpp
 
-* [coreutils](https://www.gnu.org/software/coreutils/coreutils.html)
-* a [C++ compiler](https://en.wikipedia.org/wiki/List_of_compilers#C.2B.2B_compilers)
-* [make](https://www.gnu.org/software/make/)
+A C++ program that prints the version of the compiler used to build it
 
-## Optional
+# EXAMPLE
 
-* [cppcheck](http://cppcheck.sourceforge.net)
-* [splint](http://www.splint.org)
-* [vera++](https://bitbucket.org/verateam/vera/wiki/Home)
-* [valgrind](http://valgrind.org)
-* [astyle](http://astyle.sourceforge.net)
+```console
+$ version
+4.2.1 Compatible Clang 7.0.1 (tags/RELEASE_701/final)
+```
+
+# RUNTIME REQUIREMENTS
+
+(None)
+
+# CONTRIBUTING
+
+For more details on developing version itself, see [DEVELOPMENT.md](DEVELOPMENT.md).
