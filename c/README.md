@@ -6,7 +6,7 @@ A C program that prints the version of the compiler used to build it
 
 ```console
 $ version
-8.3.0
+Clang 10.0.0
 ```
 
 # RUNTIME REQUIREMENTS
