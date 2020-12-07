@@ -1,4 +1,4 @@
-# version/c
+# version
 
 A C program that prints the version of the compiler used to build it
 
@@ -8,6 +8,10 @@ A C program that prints the version of the compiler used to build it
 $ version
 Clang 10.0.0
 ```
+
+# DOCUMENTATION
+
+https://mcandre.github.io/version/c/
 
 # RUNTIME REQUIREMENTS
 

@@ -1,13 +1,17 @@
-# version/cpp
+# version++
 
 A C++ program that prints the version of the compiler used to build it
 
 # EXAMPLE
 
 ```console
-$ version
-4.2.1 Compatible Clang 7.0.1 (tags/RELEASE_701/final)
+$ version++
+Clang 10.0.0
 ```
+
+# DOCUMENTATION
+
+https://mcandre.github.io/version/cpp/
 
 # RUNTIME REQUIREMENTS
 

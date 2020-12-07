@@ -1,12 +1,12 @@
 # Doxyfile 1.8.20
 
-PROJECT_NAME           = "version"
+PROJECT_NAME           = "version++"
 
 EXTRACT_ALL            = YES
 QUIET                  = YES
 WARN_AS_ERROR          = YES
 
-INPUT                  = src/cmd/version
+INPUT                  = src/cmd/version++
 
 GENERATE_LATEX         = NO
 
